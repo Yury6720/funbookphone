@@ -1,4 +1,4 @@
-package com.example.funbookphone.security.data.login
+package com.example.funbookphone.security.ui.login
 
 import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
@@ -7,7 +7,7 @@ import android.util.Patterns
 import com.example.funbookphone.security.data.LoginRepository
 import com.example.funbookphone.security.data.Result
 
-import com.example.funbookphone.R
+import com.example.funbookphone.security.R
 
 class LoginViewModel(private val loginRepository: LoginRepository) : ViewModel() {
 

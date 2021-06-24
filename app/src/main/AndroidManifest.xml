@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Funbookphone">
         <activity
-            android:name="com.example.funbookphone.security.data.login.LoginActivity"
+            android:name=".ui.login.LoginActivity"
             android:label="@string/title_activity_login"></activity>
+        <activity
+            android:name=".security.data.login.LoginActivity"
+            android:label="@string/title_activity_login" />
         <activity
             android:name=".MyBooks"
             android:label="@string/title_activity_my_books"

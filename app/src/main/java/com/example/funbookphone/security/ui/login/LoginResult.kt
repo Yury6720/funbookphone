@@ -1,4 +1,4 @@
-package com.example.funbookphone.security.data.login
+package com.example.funbookphone.security.ui.login
 
 /**
  * Authentication result : success (user details) or error message.

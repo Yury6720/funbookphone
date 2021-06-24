@@ -1,4 +1,4 @@
-package com.example.funbookphone.security.data.login
+package com.example.funbookphone.security.ui.login
 
 /**
  * User details post authentication that is exposed to the UI

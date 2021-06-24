@@ -1,4 +1,4 @@
-package com.example.funbookphone.security.data.login
+package com.example.funbookphone.security.ui.login
 
 import android.app.Activity
 import android.arch.lifecycle.Observer
@@ -12,19 +12,21 @@ import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.widget.EditText
 import android.widget.Toast
-import com.example.funbookphone.databinding.ActivityLoginBinding
-
 import com.example.funbookphone.R
+import com.example.funbookphone.databinding.ActivityLogin2Binding
+//import com.example.funbookphone.security.databinding.ActivityLogin2Binding
+
+//import com.example.funbookphone.security.R
 
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var loginViewModel: LoginViewModel
-    private lateinit var binding: ActivityLoginBinding
+    private lateinit var binding: ActivityLogin2Binding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityLoginBinding.inflate(layoutInflater)
+        binding = ActivityLogin2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val username = binding.username

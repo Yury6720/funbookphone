@@ -1,4 +1,4 @@
-package com.example.funbookphone.security.data.login
+package com.example.funbookphone.security.ui.login
 
 import android.arch.lifecycle.ViewModel
 import android.arch.lifecycle.ViewModelProvider

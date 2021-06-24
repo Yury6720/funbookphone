@@ -18,7 +18,7 @@ import com.example.funbookphone.databinding.ActivityLogin2Binding
 
 //import com.example.funbookphone.security.R
 
-class LoginActivity : AppCompatActivity() {
+class LoginActivityT : AppCompatActivity() {
 
     private lateinit var loginViewModel: LoginViewModel
     private lateinit var binding: ActivityLogin2Binding
@@ -37,7 +37,7 @@ class LoginActivity : AppCompatActivity() {
         loginViewModel = ViewModelProvider(this, LoginViewModelFactory())
             .get(LoginViewModel::class.java)
 
-        loginViewModel.loginFormState.observe(this@LoginActivity, Observer {
+        loginViewModel.loginFormState.observe(this@LoginActivityT, Observer {
             val loginState = it ?: return@Observer
 
             // disable login button unless both username / password is valid
@@ -51,7 +51,7 @@ class LoginActivity : AppCompatActivity() {
             }
         })
 
-        loginViewModel.loginResult.observe(this@LoginActivity, Observer {
+        loginViewModel.loginResult.observe(this@LoginActivityT, Observer {
             val loginResult = it ?: return@Observer
 
             loading.visibility = View.GONE

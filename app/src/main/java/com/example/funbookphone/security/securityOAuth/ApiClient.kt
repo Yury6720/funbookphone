@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 class ApiClient {
     private lateinit var apiService: ApiService
 
-    fun getApiService(context: Context): ApiService {
+    fun getApiService(): ApiService {
 
         // Initialize ApiService if not initialized yet
         if (!::apiService.isInitialized) {

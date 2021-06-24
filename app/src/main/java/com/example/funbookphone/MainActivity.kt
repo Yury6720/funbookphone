@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
      * Function to fetch posts
      */
     private fun fetchPosts() {
-        apiClient.getApiService(this).fetchPosts()
+        apiClient.getApiService().fetchPosts()
             .enqueue(object : Callback<PostsResponse> {
                 override fun onFailure(call: Call<PostsResponse>, t: Throwable) {
                     // Error fetching posts

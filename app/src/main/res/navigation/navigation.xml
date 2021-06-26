@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/recommendations2">
+
+    <fragment
+        android:id="@+id/myBooks"
+        android:name="com.example.funbookphone.MyBooks"
+        android:label="@string/MyBooksText"
+        tools:layout="@layout/fragment_my_books" />
+    <fragment
+        android:id="@+id/recommendations2"
+        android:name="com.example.funbookphone.Recommendations2"
+        android:label="fragment_recommendations2"
+        tools:layout="@layout/fragment_recommendations2" >
+        <action
+            android:id="@+id/action_recommendations2_to_myBooks"
+            app:destination="@id/myBooks" />
+    </fragment>
+
+</navigation>

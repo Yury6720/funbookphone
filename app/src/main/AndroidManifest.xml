@@ -20,14 +20,7 @@
 <!--        <activity-->
 <!--            android:name=".security.data.login.LoginActivityT"-->
 <!--            android:label="@string/title_activity_login" />-->
-        <activity
-            android:name=".MyBooks"
-            android:label="@string/title_activity_my_books"
-            android:theme="@style/Theme.Funbookphone.NoActionBar" />
-        <activity
-            android:name=".Books"
-            android:label="@string/title_activity_books"
-            android:theme="@style/Theme.Funbookphone.NoActionBar" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
